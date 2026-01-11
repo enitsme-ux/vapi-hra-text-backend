@@ -11,54 +11,6 @@
     "twilio": "^4.19.0"
   },
   "engines": {
-    "node": ">=16.x"
+    "node": "18.x"
   }
 }
-```
-
-4. Click **"Commit new file"**
-
----
-
-## Now Go Back to Railway
-
-1. Go back to your Railway tab (keep GitHub open)
-2. **Refresh the Railway page**
-3. In the search box, type: `vapi-hra-text-backend`
-4. Your repo should now appear
-5. **Click on it** to deploy
-
-Railway will automatically:
-- Detect it's a Node.js project
-- Install dependencies
-- Start the server
-
----
-
-## After Railway Starts Deploying
-
-Once you click your repo and Railway starts deploying, you'll need to:
-
-### Add Environment Variables:
-
-1. In Railway, click on your deployed project
-2. Click **"Variables"** tab (in the left sidebar or top menu)
-3. Click **"New Variable"** button
-4. Add these **THREE** variables one by one:
-
-**Variable 1:**
-```
-Name: TWILIO_ACCOUNT_SID
-Value: [Your Twilio Account SID from Twilio Console]
-```
-
-**Variable 2:**
-```
-Name: TWILIO_AUTH_TOKEN
-Value: [Your Twilio Auth Token from Twilio Console]
-```
-
-**Variable 3:**
-```
-Name: PORT
-Value: 3000
