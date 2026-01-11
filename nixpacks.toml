@@ -1,0 +1,22 @@
+[phases.setup]
+nixPkgs = ["nodejs-18_x"]
+
+[phases.install]
+cmds = ["npm install"]
+
+[start]
+cmd = "node index.js"
+```
+
+5. Click **"Commit new file"**
+
+---
+
+## Or Try This Simpler Approach: Use Procfile
+
+1. Go to your GitHub repo
+2. Click **"Add file"** → **"Create new file"**
+3. Name it exactly: `Procfile` (capital P, no extension)
+4. Paste this single line:
+```
+web: node index.js
